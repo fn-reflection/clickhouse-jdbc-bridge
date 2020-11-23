@@ -149,6 +149,12 @@
             <version>${sqlite-jdbc.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.18</version>
+        </dependency>
+        
     </dependencies>
 
     <!-- http://central.sonatype.org/pages/apache-maven.html -->
