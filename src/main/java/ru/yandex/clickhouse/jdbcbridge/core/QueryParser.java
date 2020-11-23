@@ -278,8 +278,8 @@ public class QueryParser {
                     schema = extractSchemaName(table);
                 }
             }
-
-            query = new QueryParser(uri, schema, table, req.getParam(PARAM_COLUMNS), null,
+            
+            query = new QueryParser(uri, schema.replace("`",""), table.replace("`",""), req.getParam(PARAM_COLUMNS), null,
                     req.getParam(PARAM_EXT_TABLE_USE_NULLS), req.params());
         }
 
